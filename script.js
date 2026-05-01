@@ -35,14 +35,13 @@ function escribirTexto(elemento, mensaje, velocidad) {
     }
     escribir();
 }
-
-// 3. Función principal que activa la sorpresa 🎁
 function mostrarMensaje() {
-    // Iniciar música
     if (player && player.playVideo) {
         player.playVideo();
+        player.unMute();
+        player.setVolume(100);
     }
-
+    
     const parrafo = document.getElementById("texto");
     const boton = document.getElementById("boton");
     const mensajeLargo = "Hola Mari, en este dia tan especial queria felicitarte y decirte ya estas viejita, ya te empezaran a tronar las rodillas, te vas a marear cada que te levantes y te dara el mal de puerco cada que termines de comer. Asi que disfruta tanto pero tanto tantisimo por que este dia se trata solo de ti y no dejes que nada ni nadie te haga sentir mal, ojala te compren un pastel como el año pasado y te inflames el estomago denuevo jsjsjs, o mejor no para que te cuides, no comas algo que te haga daño y cuidate mucho feliz cumpleaños.";
